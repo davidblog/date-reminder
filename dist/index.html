@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
+    <meta name="keywords" content="" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <!-- CSS Vendor -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <style>
+      body {
+        margin: 20px;
+      }
+      .title {
+        font-size: 1.5rem;
+      }
+      .title, .showConfig, .description {
+        margin: 20px;
+      }
+      .showConfig, .description {
+        border: 1px dashed lightblue;
+        padding: 20px;
+      }
+      #root {
+        max-width: 900px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <h1 class="title">日期提醒套件：date-reminder</h1>
+      <div class="description">
+        <p>說明：</p>
+        <p>可以用來判斷今天是否屬於特定的節日，</p>
+        <p>可以同時判斷國曆與農曆日期，</p>
+        <p>設定檔可以使用預設值也可以自由新增。</p>
+      </div>
+      <div class="title">節日設定檔：</div>
+      <div class="showConfig"></div>
+      <div class="title">今天是特別的節日嗎？<span class="isReminder"></span></div>
+      <div class="title">列出今天的節日：<span class="reminderArray"></span></div>
+    </di>
+    <!-- Custom Script -->
+    <script src="./js/date-reminder.js"></script>
+    <script>
+      const dr = dateReminder();
+      document.querySelector(".showConfig").innerHTML = JSON.stringify(
+        dr.showConfig()
+      );
+      document.querySelector(".isReminder").innerHTML =
+        dr.showReminder().isReminder;
+      document.querySelector(".reminderArray").innerHTML =
+      JSON.stringify(dr.showReminder().reminderArray);
+      console.log(dr.showReminder())
+    </script>
+  </body>
+</html>
