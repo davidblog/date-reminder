@@ -8,13 +8,13 @@
     "reminder",
     "calendar"
   ],
-  "main": "./dist/js/date-reminder.js",
+  "main": "./docs/js/date-reminder.js",
   "repository": {
     "type": "git",
     "url": ""
   },
   "scripts": {
-    "build": "rm -rf dist && webpack --mode=production",
+    "build": "rm -rf docs && webpack --mode=production",
     "server": "webpack-dev-server --mode=development"
   },
   "license": "MIT",
