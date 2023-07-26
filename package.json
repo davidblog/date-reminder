@@ -1,7 +1,7 @@
 {
   "name": "date-reminder",
   "author": "david huang",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "日期與節日提醒",
   "keywords": [
     "date",
@@ -9,6 +9,11 @@
     "calendar"
   ],
   "main": "./docs/js/date-reminder.js",
+  "files": [
+    "docs/js/",
+    "package.json",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/davidblog/date-reminder.git"
