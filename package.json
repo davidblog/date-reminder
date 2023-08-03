@@ -9,6 +9,7 @@
     "calendar"
   ],
   "main": "./docs/js/date-reminder.js",
+  "homepage": "https://github.com/davidblog/date-reminder#readme",
   "files": [
     "docs/js/",
     "package.json",
